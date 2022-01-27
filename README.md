@@ -7,6 +7,7 @@ Some other examples are more general.
 
 ## Features
 * Usage of **ocifs** for easy access to OCI **Object Storage**
+* plot a **Correlation Matrix** as an **HeatMap** using **Seaborn**
 
 
 
