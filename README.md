@@ -8,10 +8,11 @@ Some other examples are more general.
 ## Features
 * Usage of **ocifs** for easy access to OCI **Object Storage**
 * plot a **Correlation Matrix** as an **HeatMap** using **Seaborn**
-* How to check if GPU support is working
+* How to check if **GPU** support is working
+* How to do K-fold Cross Validation
 
 ## Examples on how to use Catboost
-You can find examples in this other repository of mine
+You can find examples in this other repository of mine:
 
 https://github.com/luigisaetta/catboost-employee-attrition
 
