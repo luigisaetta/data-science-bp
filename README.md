@@ -6,6 +6,7 @@ Some of these examples are based on **OCI DataScience Cloud Service**.
 Some other examples are more general.
 
 ## Features
+* How to compute basic stats for a dataset
 * Usage of **ocifs** for easy access to OCI **Object Storage**
 * plot a **Correlation Matrix** as an **HeatMap** using **Seaborn**
 * How to check if **GPU** support is working
