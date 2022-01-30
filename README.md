@@ -1,7 +1,7 @@
 # data-science-bp
 This repo will contains a set of best practices and examples for a successful adoption of **Data Science**
 
-Some of these examples are based on **OCI DataScience Cloud Service**.
+Some of these examples are based on **OCI DataScience Cloud Service** (https://www.oracle.com/it/data-science/service/).
 
 Some other examples are more general.
 
