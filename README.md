@@ -8,7 +8,7 @@ Some other examples are more general.
 ## Features
 * How to compute basic stats for a dataset
 * [How-to](https://github.com/luigisaetta/data-science-bp/blob/main/eda_hist.ipynb) easily ploy hystograms of features using Seaborn and Matplotlib: 
-* Usage of **ocifs** for easy access to OCI **Object Storage**
+* Usage of [**ocifs**](https://github.com/luigisaetta/data-science-bp/blob/main/ocifs1.ipynb) for easy access to OCI **Object Storage**
 * plot a **Correlation Matrix** as an **HeatMap** using **Seaborn**
 * How to check if **GPU** support is working
 * How to do **K-fold Cross Validation*
