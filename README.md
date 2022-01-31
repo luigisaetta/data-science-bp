@@ -19,6 +19,9 @@ You can find examples in this other repository of mine:
 
 https://github.com/luigisaetta/catboost-employee-attrition
 
+## The Wiki
+This repository has a Wiki.
+Now, it is WIP. But it will soon contains a set of notes to better explain concepts and describe techniques.
 
 
 
