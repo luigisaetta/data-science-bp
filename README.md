@@ -14,6 +14,7 @@ Some other examples are more general.
 * plot a [**Correlation Matrix**](https://github.com/luigisaetta/data-science-bp/blob/main/correlation_heatmap.ipynb) as an **HeatMap** using **Seaborn**
 * How to check if **GPU** support is working
 * How to do [**K-fold Cross Validation**](https://github.com/luigisaetta/data-science-bp/blob/main/how_to_kfold_cv.ipynb)
+* Using ADSTuner for Hyper-parameter optimization
 
 ## Examples on how to use Catboost
 You can find examples in this other repository of mine:
