@@ -9,6 +9,7 @@ Some other examples are more general.
 * [How-to](https://github.com/luigisaetta/data-science-bp/blob/main/eda_basic_stats.ipynb) compute basic stats for a dataset
 * [How-to](https://github.com/luigisaetta/data-science-bp/blob/main/eda_hist.ipynb) easily plot hystograms of features using **Seaborn** and **Matplotlib**
 * [analyze](https://github.com/luigisaetta/data-science-bp/blob/main/eda1.ipynb) and plot cardinality of features
+* Identify categorical features
 * Usage of [**ocifs**](https://github.com/luigisaetta/data-science-bp/blob/main/ocifs1.ipynb) for easy access to OCI **Object Storage**
 * plot a [**Correlation Matrix**](https://github.com/luigisaetta/data-science-bp/blob/main/correlation_heatmap.ipynb) as an **HeatMap** using **Seaborn**
 * How to check if **GPU** support is working
