@@ -9,12 +9,13 @@ Some other examples are more general.
 * [How-to](https://github.com/luigisaetta/data-science-bp/blob/main/eda_basic_stats.ipynb) compute basic stats for a dataset
 * [How-to](https://github.com/luigisaetta/data-science-bp/blob/main/eda_hist.ipynb) easily plot hystograms of features using **Seaborn** and **Matplotlib**
 * [analyze](https://github.com/luigisaetta/data-science-bp/blob/main/eda1.ipynb) and plot cardinality of features
-* Identify categorical features
+* Identify **categorical** features
 * Usage of [**ocifs**](https://github.com/luigisaetta/data-science-bp/blob/main/ocifs1.ipynb) for easy access to OCI **Object Storage**
 * plot a [**Correlation Matrix**](https://github.com/luigisaetta/data-science-bp/blob/main/correlation_heatmap.ipynb) as an **HeatMap** using **Seaborn**
-* How to check if **GPU** support is working
+* Usage of OCI ADS FeatureType for better and easier Data Analysis and Validation
 * How to do [**K-fold Cross Validation**](https://github.com/luigisaetta/data-science-bp/blob/main/how_to_kfold_cv.ipynb)
 * Using ADSTuner for Hyper-parameter optimization
+* How to check if **GPU** support is working
 
 ## Examples on how to use Catboost
 You can find examples in this other repository of mine:
