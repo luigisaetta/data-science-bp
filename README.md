@@ -17,6 +17,12 @@ Some other examples are more general.
 * Using ADSTuner for Hyper-parameter optimization
 * How to check if **GPU** support is working
 
+## OCI Data Science JOBS Best Practices and examples
+
+https://github.com/luigisaetta/jobs_bp
+
+[How-to batch scoring using JOBS](https://github.com/luigisaetta/jobs_bp/blob/main/jobs_scoring_tutorial.md)
+
 ## Examples on how to use Catboost
 You can find examples in this other repository of mine:
 
