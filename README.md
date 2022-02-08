@@ -17,6 +17,9 @@ Some other examples are more general.
 * Using ADSTuner for Hyper-parameter optimization
 * How to check if **GPU** support is working
 
+## Examples
+* [Complete example of EDA](https://github.com/luigisaetta/data-science-bp/blob/main/example_complete_eda.ipynb)
+
 ## OCI Data Science JOBS Best Practices and examples
 
 https://github.com/luigisaetta/jobs_bp
