@@ -1,4 +1,5 @@
 *.zip
+*.ora
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
