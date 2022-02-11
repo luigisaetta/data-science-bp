@@ -1,5 +1,6 @@
 # Data Science Best Practices and Examples
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 This repository will contains a set of **best practices and examples** for a successful adoption of **Data Science**
 
 Some of these examples are based on **OCI DataScience Cloud Service** (https://www.oracle.com/it/data-science/service/).
