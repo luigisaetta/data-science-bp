@@ -20,6 +20,7 @@ Some other examples are more general.
 
 ## Examples
 * [Complete example of EDA](https://github.com/luigisaetta/data-science-bp/blob/main/example_complete_eda.ipynb)
+* [How to use sql-magic](https://github.com/luigisaetta/data-science-bp/blob/main/test_sql_magic.ipynb) with Oracle ADWH
 
 ## OCI Data Science JOBS Best Practices and examples
 

@@ -1,5 +1,9 @@
 *.zip
 *.ora
+*.p12
+*.jks
+*.sso
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
