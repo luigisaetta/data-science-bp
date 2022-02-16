@@ -38,7 +38,10 @@ https://github.com/luigisaetta/catboost-employee-attrition
 
 ## The Wiki
 This repository has a [Wiki](https://github.com/luigisaetta/data-science-bp/wiki).
-Now, it is WIP. But it will soon contains a set of notes to better explain concepts and describe techniques.
+
+You can find there more details regarding:
+* How to connect froma Notebook to Oracle ADWH and read data
+* How to use MLFLow in OCI Cloud
 
 
 
