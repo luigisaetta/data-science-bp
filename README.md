@@ -40,7 +40,7 @@ https://github.com/luigisaetta/catboost-employee-attrition
 This repository has a [Wiki](https://github.com/luigisaetta/data-science-bp/wiki).
 
 You can find there more details regarding:
-* How to connect froma Notebook to Oracle ADWH and read data
+* How to connect from a Notebook to Oracle ADWH and read data
 * How to use MLFLow in OCI Cloud
 
 
