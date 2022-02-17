@@ -19,6 +19,7 @@ Some other examples are more general.
 * Using ADSTuner for Hyper-parameter optimization
 * How-to [connect to Oracle ADWH](https://github.com/luigisaetta/data-science-bp/blob/main/test_adwh_conn.ipynb) and load data from it
 * How to check if **GPU** support is working
+* How to **remove stagionality** from a **Time Series**
 
 ## Examples
 * [Complete example of EDA](https://github.com/luigisaetta/data-science-bp/blob/main/example_complete_eda.ipynb)
