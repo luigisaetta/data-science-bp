@@ -23,7 +23,7 @@ Some other examples are more general.
 
 ## Examples
 * [Complete example of EDA](https://github.com/luigisaetta/data-science-bp/blob/main/example_complete_eda.ipynb)
-* [Quickly compute missing values, cardinality, identofy categoricals](https://github.com/luigisaetta/data-science-bp/blob/main/dataset_complete_analysis.ipynb)
+* [Quickly compute missing values, cardinality, identify categorical columns](https://github.com/luigisaetta/data-science-bp/blob/main/dataset_complete_analysis.ipynb)
 * [How to use Optuna and MLFlow](https://github.com/luigisaetta/data-science-bp/blob/main/mlflow_optuna.ipynb)
 * [How to use sql-magic](https://github.com/luigisaetta/data-science-bp/blob/main/test_sql_magic.ipynb) with Oracle ADWH
 
