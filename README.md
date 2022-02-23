@@ -31,7 +31,10 @@ Some other examples are more general.
 
 https://github.com/luigisaetta/jobs_bp
 
-[How-to batch scoring using JOBS](https://github.com/luigisaetta/jobs_bp/blob/main/jobs_scoring_tutorial.md)
+This one is an example that show how-to use Data Science Jobs to do, in batch mode, scoring using a JOB.
+
+The dataset used for the inference (scoring) is taken from Object Storage and the result is produced again on Object Storage:
+[How-to do batch scoring using JOBS](https://github.com/luigisaetta/jobs_bp/blob/main/jobs_scoring_tutorial.md)
 
 ## Examples on how to use Catboost
 You can find examples in this other repository of mine:
