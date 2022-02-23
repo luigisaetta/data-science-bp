@@ -46,7 +46,7 @@ You can find there more details regarding:
 * How to use set-up and use MLflow in OCI Cloud
 
 ## ADS
-Oracle Accelerated Data Science SSDK library is now Open Source: see it on [GitHub](https://github.com/oracle/accelerated-data-science)
+Oracle Accelerated Data Science SDK library is now Open Source: see it on [GitHub](https://github.com/oracle/accelerated-data-science)
 
 
 
