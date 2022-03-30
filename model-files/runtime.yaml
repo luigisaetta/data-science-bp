@@ -1,3 +1,4 @@
+# Model runtime environment
 MODEL_ARTIFACT_VERSION: '3.0'
 MODEL_DEPLOYMENT:
   INFERENCE_CONDA_ENV:
@@ -10,9 +11,9 @@ MODEL_PROVENANCE:
   PROJECT_OCID: ocid1.datascienceproject.oc1.eu-frankfurt-1.amaaaaaangencdya23mxim62zd4hasv5t44pjinkhpqj3ip6hti4ftrxja7a
   TENANCY_OCID: ocid1.tenancy.oc1..aaaaaaaabu5fgingcjq3vc7djuwsdcutdxs4gsws6h4kfoldqpjuggxprgoa
   TRAINING_CODE:
-    ARTIFACT_DIRECTORY: /home/datascience/data-science-bp/model-files
+    ARTIFACT_DIRECTORY: ./model-files
     GIT_BRANCH: main
-    GIT_COMMIT: 893ed71dab6f3b1e42ebfad4d735adbe4c080f18
+    GIT_COMMIT: becc80994fe8b572dcaa505993b07efedcd90e29
     GIT_REMOTE: https://github.com/luigisaetta/data-science-bp.git
   TRAINING_COMPARTMENT_OCID: ocid1.compartment.oc1..aaaaaaaag2cpni5qj6li5ny6ehuahhepbpveopobooayqfeudqygdtfe6h3a
   TRAINING_CONDA_ENV:
