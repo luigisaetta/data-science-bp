@@ -1,0 +1,1 @@
+{"schema": [{"dtype": "float64", "feature_type": "Continuous", "name": 0, "domain": {"values": "Continuous", "stats": {"count": 4128.0, "mean": 2.033, "standard deviation": 1.145, "sample minimum": 0.15, "lower quartile": 1.163, "median": 1.761, "upper quartile": 2.596, "sample maximum": 5.0, "skew": 1.011}, "constraints": []}, "required": true, "description": "0"}]}
