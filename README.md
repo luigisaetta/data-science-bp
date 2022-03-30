@@ -27,6 +27,7 @@ Some other examples are more general.
 * [How to use Optuna and MLFlow](https://github.com/luigisaetta/data-science-bp/blob/main/mlflow_optuna.ipynb)
 * [How to do Hyper-parameter optimization with ADSTuner and track in MLFlow](https://github.com/luigisaetta/data-science-bp/blob/main/ads_tuner_mlflow_xgb1.ipynb)
 * [How to use sql-magic](https://github.com/luigisaetta/data-science-bp/blob/main/test_sql_magic.ipynb) with Oracle ADWH
+* [How to save a model to the Model Catalog and deploy as a REST service](https://github.com/luigisaetta/data-science-bp/blob/main/california_housing_model_deployment.ipynb)
 
 ## OCI Data Science JOBS Best Practices and examples
 
