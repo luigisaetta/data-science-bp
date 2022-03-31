@@ -12,7 +12,7 @@ MODEL_PROVENANCE:
   TRAINING_CODE:
     ARTIFACT_DIRECTORY: /home/datascience/data-science-bp/model-files
     GIT_BRANCH: main
-    GIT_COMMIT: 7c17dd4b77249d322834b965ab7394a44bc65248
+    GIT_COMMIT: 452f47f1a2b5f58b539e73b1bb4234b147713d53
     GIT_REMOTE: https://github.com/luigisaetta/data-science-bp.git
   TRAINING_COMPARTMENT_OCID: ocid1.compartment.oc1..aaaaaaaag2cpni5qj6li5ny6ehuahhepbpveopobooayqfeudqygdtfe6h3a
   TRAINING_CONDA_ENV:
