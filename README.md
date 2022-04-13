@@ -18,7 +18,7 @@ Some other examples are more general.
 * How to do [**K-fold Cross Validation**](https://github.com/luigisaetta/data-science-bp/blob/main/how_to_kfold_cv.ipynb)
 * Using ADSTuner for Hyper-parameter optimization
 * How-to [connect to Oracle ADWH](https://github.com/luigisaetta/data-science-bp/blob/main/test_adwh_conn.ipynb) and load data from it
-* How-to save a model to the **Model Catalog**
+* How-to [save a model to the Model Catalog](https://github.com/luigisaetta/data-science-bp/wiki/New-ADS-functionalities-to-simplify-saving-in-Model-Catalog)
 * How to check if **GPU** support is working
 * How to **remove stagionality** from a **Time Series**
 
@@ -28,7 +28,7 @@ Some other examples are more general.
 * [How to use Optuna and MLFlow](https://github.com/luigisaetta/data-science-bp/blob/main/mlflow_optuna.ipynb)
 * [How to do Hyper-parameter optimization with ADSTuner and track in MLFlow](https://github.com/luigisaetta/data-science-bp/blob/main/ads_tuner_mlflow_xgb1.ipynb)
 * [How to use sql-magic](https://github.com/luigisaetta/data-science-bp/blob/main/test_sql_magic.ipynb) with Oracle ADWH
-* [How to save a model to the Model Catalog and deploy as a REST service](https://github.com/luigisaetta/data-science-bp/blob/main/california_housing_model_deployment.ipynb)
+* [How to save a model to the Model Catalog and deploy as a REST service](https://github.com/luigisaetta/data-science-bp/blob/main/deploy_cal_housing_new_ads.ipynb)
 
 ## OCI Data Science JOBS Best Practices and examples
 
