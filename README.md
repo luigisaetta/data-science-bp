@@ -50,6 +50,8 @@ This repository has a [Wiki](https://github.com/luigisaetta/data-science-bp/wiki
 You can find there more details regarding:
 * How to connect from a Notebook to Oracle ADWH and read data
 * How to use set-up and use MLflow in OCI Cloud
+* How to save a Model to the Model Catalog
+* How to deploy a model as a REST service
 
 ## ADS
 Oracle Accelerated Data Science SDK library is now Open Source: see it on [GitHub](https://github.com/oracle/accelerated-data-science)
