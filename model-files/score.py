@@ -1,32 +1,22 @@
-
-import pandas as pd
-import numpy as np
-
-from xgboost import XGBClassifier
-
 import json
 import os
-import pickle
+import sys
+import xgboost as xgb
+import pandas as pd
+import numpy as np
+from functools import lru_cache
+from io import BytesIO
+import base64
 
-import io
-import logging 
+model_name = 'model.json'
 
-# logging configuration - OPTIONAL 
-logging.basicConfig(format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
-logger_pred = logging.getLogger('model-prediction')
-logger_pred.setLevel(logging.INFO)
-logger_feat = logging.getLogger('input-features')
-logger_feat.setLevel(logging.INFO)
-
-model_name = 'model.pkl'
-
-# to enable/disable detailed logging
-DEBUG = True
 
 """
    Inference script. This script is used for prediction by scoring server when schema is known.
 """
 
+
+@lru_cache(maxsize=10)
 def load_model(model_file_name=model_name):
     """
     Loads model from the serialized format
@@ -35,21 +25,45 @@ def load_model(model_file_name=model_name):
     -------
     model:  a model instance on which predict API can be invoked
     """
-    
+    model_xgb = xgb.Booster()
     model_dir = os.path.dirname(os.path.realpath(__file__))
+    if model_dir not in sys.path:
+        sys.path.insert(0, model_dir)
     contents = os.listdir(model_dir)
-    
-    # Load the model from the model_dir using the appropriate loader
-    
     if model_file_name in contents:
-        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), model_file_name), "rb") as file:
-            model = pickle.load(file) 
-            logger_pred.info("Loaded the model !!!")
-                
+        print(f'Start loading {model_file_name} from model directory {model_dir} ...')
+        model_xgb.load_model(os.path.join(os.path.dirname(os.path.realpath(__file__)), model_file_name))
+
+        print("Model is successfully loaded.")
+        return model_xgb
     else:
         raise Exception('{0} is not found in model directory {1}'.format(model_file_name, model_dir))
-    
-    return model
+
+def deserialize(data):
+    """
+    Deserialize json serialization data to data in original type when sent to predict.
+
+    Parameters
+    ----------
+    data: serialized input data.
+
+    Returns
+    -------
+    data: deserialized input data.
+
+    """
+    json_data = data['data']
+    data_type = data['data_type']
+
+    if "numpy.ndarray" in data_type:
+        load_bytes = BytesIO(base64.b64decode(json_data.encode('utf-8')))
+        return np.load(load_bytes, allow_pickle=True)
+    if "pandas.core.series.Series" in data_type:
+        return pd.Series(json_data)
+    if "pandas.core.frame.DataFrame" in data_type:
+        return pd.read_json(json_data)
+
+    return json_data
 
 def pre_inference(data):
     """
@@ -64,8 +78,7 @@ def pre_inference(data):
     data: Data format after any processing.
 
     """
-    logger_pred.info("Preprocessing...")
-    
+    data = deserialize(data)
     return data
 
 def post_inference(yhat):
@@ -81,9 +94,7 @@ def post_inference(yhat):
     yhat: Data format after any processing.
 
     """
-    logger_pred.info("Postprocessing output...")
-    
-    return yhat
+    return yhat.tolist()
 
 def predict(data, model=load_model()):
     """
@@ -92,7 +103,7 @@ def predict(data, model=load_model()):
     Parameters
     ----------
     model: Model instance returned by load_model API
-    data: Data format as expected by the predict API of the core estimator. For eg. in case of sckit models it could be numpy array/List of list/Pandas DataFrame
+    data: Data format as expected by the predict API of the core estimator. For eg. in case xgboost models it could be dict/string of Numpy Array/Pandas DataFrame
 
     Returns
     -------
@@ -100,28 +111,6 @@ def predict(data, model=load_model()):
         Format: {'prediction': output from model.predict method}
 
     """
-    
-    logger_pred.info("In function predict...")
-    
-    # some check
-    assert model is not None, "Model is not loaded"
-    
-    x = pd.read_json(io.StringIO(data)).values
-    
-    if DEBUG:
-        logger_feat.info("Logging features")
-        logger_feat.info(x)
-    
-    # preprocess data (for example normalize features)
-    x = pre_inference(x)
-
-    logger_pred.info("Invoking model......")
-    
-    # compute predictions (binary, from model)
-    preds = model.predict(x)
-    
-    # to avoid not JSON serialiable error (np.array is not)
-    preds = preds.tolist()
-    
-    # post inference not needed
-    return {'prediction': preds}
+    data = pre_inference(data)
+    data = xgb.DMatrix(data)
+    return {'prediction': post_inference(model.predict(data))}

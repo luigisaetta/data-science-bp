@@ -53,7 +53,7 @@
         "description": "Check that field MODEL_DEPLOYMENT.INFERENCE_PYTHON_VERSION is set to a value of 3.6 or higher",
         "error_msg": "In runtime.yaml, the key MODEL_DEPLOYMENT.INFERENCE_PYTHON_VERSION must be set to a value of 3.6 or higher.",
         "success": true,
-        "value": "3.7.12"
+        "value": "3.7"
     },
     "runtime_env_path": {
         "category": "conda_env",
@@ -66,6 +66,6 @@
         "category": "conda_env",
         "description": "Check that the file path in MODEL_DEPLOYMENT.INFERENCE_ENV_PATH is correct.",
         "error_msg": "In runtime.yaml, the key MODEL_DEPLOYMENT.INFERENCE_ENV_PATH does not exist.",
-        "success": false
+        "success": true
     }
 }
