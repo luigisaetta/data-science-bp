@@ -52,6 +52,7 @@ You can find there more details regarding:
 * How to use set-up and use MLflow in OCI Cloud
 * How to save a Model to the Model Catalog
 * How to deploy a model as a REST service
+* How-to use a custom conda env in JOBS
 
 ## ADS
 Oracle Accelerated Data Science SDK library is now Open Source: see it on [GitHub](https://github.com/oracle/accelerated-data-science)
